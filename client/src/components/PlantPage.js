@@ -6,7 +6,7 @@ import Search from "./Search";
 function PlantPage() {
   const [plants, setPlants] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
-
+  console.log(plants)
   useEffect(() => {
     // no need to use http://localhost:3000 here
     fetch("/plants")
